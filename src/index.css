@@ -17,18 +17,26 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 20px;
 }
-.slider .splide__track {
+.slider .splide__track,
+.slider .splide__list,
+.slider .splide {
   width: 100% !important;
 }
 .slider .splide__pagination__page {
   margin: 0px !important;
   transform: none !important;
   width: 50px !important;
+  opacity: 0.5 !important;
 }
-.slider .splide__pagination__page:first-child {
+.slider .splide__pagination li:nth-child(1) .splide__pagination__page {
   border-radius: 4px 0px 0px 4px !important;
 }
-.slider .splide__pagination__page:last-child {
+.slider .splide__pagination li:nth-child(2) .splide__pagination__page {
   border-radius: 0px 4px 4px 0px !important;
+}
+.slider .splide__pagination__page.is-active {
+  background-color: white !important;
+  opacity: 1 !important;
 }

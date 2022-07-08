@@ -18,6 +18,9 @@ function Slider() {
           perMove: 1,
           arrows: false,
           pagination: true,
+          type: "fade",
+          autoplay: true,
+          speed: 1000,
         }}
       >
         <SplideSlide>
