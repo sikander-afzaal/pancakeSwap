@@ -1,0 +1,51 @@
+.mainBtn {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: all 0.2s ease;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: var(--button-bg);
+  color: white;
+}
+.mainBtn:hover {
+  background-color: transparent;
+  color: var(--button-bg);
+  border-color: var(--button-bg);
+}
+.inverseBtn {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+  border: 2px solid var(--button-bg);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: all 0.2s ease;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: transparent;
+  color: var(--button-bg);
+}
+.inverseBtn:hover {
+  background-color: var(--button-bg);
+  color: white;
+}

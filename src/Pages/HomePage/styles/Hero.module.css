@@ -1,0 +1,78 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+  margin-top: 100px;
+  padding-inline: 20px;
+}
+.leftHero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftHero h1 {
+  color: rgb(118, 69, 217);
+  line-height: 1.1;
+  font-size: 64px;
+}
+.leftHero p {
+  font-size: 20px;
+  color: rgb(40, 13, 95);
+  line-height: 1.1;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.heroImg {
+  max-width: 500px;
+  object-fit: contain;
+  animation: translate 2s ease-in-out infinite alternate-reverse;
+}
+@keyframes translate {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .leftHero h1 {
+    font-size: 40px;
+  }
+  .heroImg {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 5px;
+    padding-bottom: 80px;
+  }
+  .leftHero {
+    order: 2;
+  }
+  .rightHero {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .heroImg {
+    max-width: 200px;
+  }
+}

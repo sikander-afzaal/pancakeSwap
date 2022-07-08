@@ -1,3 +1,27 @@
 .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heroBg {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(
+    139.73deg,
+    rgb(230, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  position: relative;
+  isolation: isolate;
+}
+.heroPatt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
