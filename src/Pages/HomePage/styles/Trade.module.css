@@ -3,9 +3,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  padding-top: 40px;
   width: 100%;
   padding-bottom: 70px;
   position: relative;
+  background-color: rgb(250, 249, 250);
 }
 .path {
   position: absolute;
@@ -14,6 +16,7 @@
   top: 100%;
   left: 0;
   fill: rgb(250, 249, 250);
+  z-index: 2;
 }
 .trade {
   display: flex;

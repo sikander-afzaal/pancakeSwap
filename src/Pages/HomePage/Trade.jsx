@@ -32,7 +32,7 @@ function Trade() {
         preserveAspectRatio="none"
         color="text"
         xmlns="http://www.w3.org/2000/svg"
-        class={styles.path}
+        className={styles.path}
       >
         <path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z"></path>
       </svg>
