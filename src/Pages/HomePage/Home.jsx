@@ -3,6 +3,7 @@ import patt from "../../Assets/hero-patt.svg";
 import Slider from "../../Components/Slider/Slider";
 import Hero from "./Hero";
 import styles from "./styles/Home.module.css";
+import Trade from "./Trade";
 import Users from "./Users";
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
         <img src={patt} className={styles.heroPatt} alt="" />
       </div>
       <Users />
+      <Trade />
     </div>
   );
 }

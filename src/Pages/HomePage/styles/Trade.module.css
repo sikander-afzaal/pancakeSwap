@@ -1,0 +1,134 @@
+.tradeCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  padding-bottom: 70px;
+  position: relative;
+}
+.path {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  fill: rgb(250, 249, 250);
+}
+.trade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  gap: 4rem;
+  padding-inline: 20px;
+}
+.leftTrade {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 0.5;
+  height: 100%;
+  gap: 15px;
+}
+.leftTrade h1 {
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 40px;
+  color: rgb(40, 13, 95);
+}
+.leftTrade span {
+  color: rgb(118, 69, 217);
+}
+.leftTrade p {
+  color: var(--purple-color);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+  max-width: 400px;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btnDiv a {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-weight: 600;
+}
+.btnDiv a:hover {
+  text-decoration: underline;
+}
+.rightTrade {
+  position: relative;
+  flex: 0.5;
+  height: 100%;
+}
+.rightTrade img {
+  position: absolute;
+  max-width: 420px;
+  object-fit: contain;
+  left: 0;
+  top: 0%;
+}
+.rightTrade img:first-of-type {
+  z-index: 3;
+  animation: coin 3.2s ease-in-out infinite alternate;
+}
+.rightTrade img:nth-of-type(2) {
+  z-index: 2;
+  animation: coin 3s ease-in-out infinite alternate;
+}
+.rightTrade img:nth-of-type(3) {
+  z-index: 1;
+  animation: coin 2.8s ease-in-out infinite alternate;
+}
+@keyframes coin {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .trade {
+    flex-direction: column;
+    padding-bottom: 3rem;
+    height: 500px;
+    gap: 0px;
+  }
+  .leftTrade br {
+    display: none;
+  }
+  .leftTrade p {
+    max-width: 100%;
+  }
+  .leftTrade {
+    order: 2;
+    width: 100%;
+    flex: none;
+    align-items: flex-start;
+  }
+  .rightTrade {
+    order: 1;
+    flex: none;
+    width: 100%;
+    height: 50%;
+  }
+  .rightTrade img {
+    max-width: 200px;
+    top: 50%;
+    right: 0%;
+    left: auto;
+  }
+}
