@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding-inline: 16px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(231, 227, 235);
+}
+.leftHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.leftHeader img {
+  max-width: 140px;
+  object-fit: contain;
+}
+.navLink {
+  position: relative;
+}
+.navLink a {
+  text-decoration: none;
+  color: var(--purple-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.mainNav {
+  display: inline-flex;
+  width: 60px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.mainNav svg {
+  font-size: 27px !important;
+}
+.mainNav:hover {
+  background: rgb(239, 244, 245);
+  border-radius: 16px;
+}
+.navLink svg {
+  color: var(--purple-color);
+  font-size: 16px;
+}
+.dropMenu {
+  position: absolute;
+  top: 100%;
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 16px;
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  padding: 20px;
+  display: none;
+}
+.rightHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.languageDrop {
+  display: flex;
+  display: none;
+  width: 200px;
+  max-height: 400px;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px,
+    rgb(25 19 38 / 5%) 0px 1px 1px;
+  padding: 16px;
+}
