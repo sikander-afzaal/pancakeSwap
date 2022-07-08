@@ -1,0 +1,64 @@
+.userCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+}
+.patt {
+  width: 100%;
+  object-fit: contain;
+  fill: rgb(216, 203, 237);
+  max-height: 48px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+.users h1:first-of-type {
+  color: rgb(40, 13, 95);
+  line-height: 1.1;
+  font-weight: 600;
+  font-size: 40px;
+}
+.userDesc,
+.userWhy {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  max-width: 550px;
+  font-size: 16px;
+}
+.userWhy {
+  font-weight: 600;
+}
+.boxRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 1rem;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 938px) {
+  .userCont {
+    margin-top: 0px;
+    padding-top: 2rem;
+  }
+  .boxRow {
+    flex-direction: column;
+  }
+}
