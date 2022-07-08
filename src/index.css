@@ -10,3 +10,25 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.slider .splide__track {
+  width: 100% !important;
+}
+.slider .splide__pagination__page {
+  margin: 0px !important;
+  transform: none !important;
+  width: 50px !important;
+}
+.slider .splide__pagination__page:first-child {
+  border-radius: 4px 0px 0px 4px !important;
+}
+.slider .splide__pagination__page:last-child {
+  border-radius: 0px 4px 4px 0px !important;
+}

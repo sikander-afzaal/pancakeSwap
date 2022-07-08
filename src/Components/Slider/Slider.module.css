@@ -1,0 +1,111 @@
+.slideBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 240px;
+  padding-left: 30px;
+  background: linear-gradient(
+    to bottom,
+    rgb(118, 69, 217) 0%,
+    rgb(69, 42, 122) 100%
+  );
+  border-radius: 20px;
+}
+
+.leftSlide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.leftSlide h1 {
+  text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+.leftSlide .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../Assets/slider/bg.png") 0% 0% / 100% 100% no-repeat;
+  background-repeat: no-repeat;
+  padding: 0px 10px 7px;
+  height: 60px;
+  gap: 10px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
+}
+.time p,
+.time h1 {
+  background: linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 1;
+}
+.time h1 {
+  font-size: 40px;
+}
+.time p {
+  line-height: 1.5 !important;
+  font-size: 20px;
+}
+.mainBtn {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  gap: 20px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: all 0.2s ease;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: rgb(31, 199, 212);
+  color: white;
+}
+
+.rightSlide img {
+  position: absolute;
+  max-width: 100%;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+}
+.rightSlide1 img {
+  max-width: 400px;
+}
+.rightSlide2 img {
+  max-width: 1000px;
+}
+.leftSlide h4 {
+  background: linear-gradient(to top, rgb(255, 216, 0), rgb(235, 140, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  line-height: 1;
+  font-size: 24px;
+}
+.leftSlide h2 {
+  color: white;
+  font-size: 40px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  text-transform: uppercase;
+}
