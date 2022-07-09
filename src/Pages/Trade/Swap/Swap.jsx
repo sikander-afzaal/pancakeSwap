@@ -56,6 +56,7 @@ function Swap() {
         onClick={() => {
           setShowGraph(false);
           setShowMenu(false);
+          setShowTransactions(false);
         }}
         className={`${styles.overlay} ${
           window.innerWidth > 1000
