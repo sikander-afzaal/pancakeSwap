@@ -5,6 +5,9 @@
   --button-bg: rgb(31, 199, 212);
   --light-purple: rgb(118, 69, 217);
   --dark-purple: rgb(40, 13, 95);
+  --footer-link: rgb(244, 238, 255);
+  --footer-social: rgb(184, 173, 210);
+  --footer-purple: rgb(154, 106, 255);
 }
 * {
   margin: 0;
