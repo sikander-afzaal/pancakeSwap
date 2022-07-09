@@ -1,0 +1,341 @@
+.swap {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3rem;
+  padding-inline: 1rem;
+}
+.graphSection {
+  height: 526px;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 24px;
+  display: none;
+}
+.graphSection > img {
+  border-radius: 24px;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  min-width: 316px;
+  height: 526px;
+  border-radius: 24px;
+  box-shadow: 0px 3px 0px 0px rgb(231, 227, 235);
+  border: 1px solid rgb(231, 227, 235);
+}
+.cardHeader {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--purple-color);
+  gap: 2px;
+  border-bottom: 1px solid rgb(231, 227, 235);
+}
+.cardHeader > p {
+  font-size: 14px;
+}
+.cardHeaderTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cardHeaderTop > h1 {
+  font-size: 20px;
+  color: var(--dark-purple);
+  font-weight: 600;
+}
+.graphIcon {
+  position: absolute;
+  left: 0;
+  color: var(--purple-color);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.graphIcon:hover {
+  opacity: 0.6;
+}
+.cardHeaderIcons {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  display: flex;
+  gap: 12px;
+  color: var(--purple-color);
+}
+.cardHeaderIcons > * {
+  transition: all 0.15s;
+  cursor: pointer;
+}
+.cardHeaderIcons > *:hover {
+  opacity: 0.6;
+}
+.cardContent {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: calc(100% - 102px);
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.inputContainer > input {
+  background-color: rgb(231, 227, 235);
+  border: none;
+  height: 60px;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: gray;
+  text-align: end;
+  padding-right: 1rem;
+}
+.inputInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  cursor: pointer;
+  color: var(--dark-purple);
+  transition: opacity 0.2s;
+}
+.inputInfo:hover {
+  opacity: 0.6;
+}
+.inputInfo > img {
+  width: 24px;
+  height: 24px;
+}
+.coinName {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.switchBtn {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: rgb(231, 227, 235);
+  color: var(--button-bg);
+  font-size: 18px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.hoverIcon,
+.normalIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+}
+.hoverIcon {
+  opacity: 0;
+}
+.switchBtn:hover {
+  background-color: var(--button-bg);
+}
+.switchBtn:hover .hoverIcon {
+  opacity: 1;
+}
+.switchBtn:hover .normalIcon {
+  opacity: 0;
+}
+.st {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.stText {
+  color: var(--light-purple);
+  font-size: 12px;
+  font-weight: 500;
+}
+.stValue {
+  color: var(--button-bg);
+  font-weight: 600;
+}
+.button {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.showGraph {
+  display: flex;
+}
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(40, 13, 95, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+.tokenMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  border-radius: 24px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 650px;
+  height: 100vh;
+  z-index: 5;
+  transition: opacity 0.2s;
+}
+.menuHeader {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuHeader > h1 {
+  font-size: 20px;
+  color: var(--dark-purple);
+}
+.menuContent {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchbar {
+  width: 90%;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 12px;
+  height: 50px;
+  background-color: rgb(231, 227, 235);
+  margin-bottom: 1.5rem;
+}
+.menuHeader > svg {
+  color: var(--button-bg);
+  cursor: pointer;
+}
+.tokens {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.token {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.token > img {
+  width: 24px;
+  height: 24px;
+}
+.token > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.token h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+  line-height: 1;
+}
+.token p {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--purple-color);
+}
+.token:hover {
+  background-color: rgb(250, 249, 250);
+}
+.openOverlay {
+  opacity: 1;
+  pointer-events: all;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: not-allowed;
+  user-select: none;
+}
+.transactionMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  z-index: 5;
+  transition: opacity 0.2s;
+  max-width: 300px;
+  width: 90%;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  padding-bottom: 24px;
+}
+.transactionMenu > button {
+  width: 85%;
+}
+.transactionMenu > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--button-bg);
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%)
+    repeat scroll 0% 0%;
+  border-bottom: 1px solid rgb(231, 227, 235);
+  padding: 12px 24px;
+}
+.transactionMenu h1 {
+  color: var(--dark-purple);
+  font-size: 20px;
+}
+.transactionMenu svg {
+  cursor: pointer;
+}
+.showMenu {
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 1000px) {
+  .graphSection {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 24px 24px 0 0;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    z-index: 100;
+  }
+  .graphSection > img {
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+  }
+  .showGraph {
+    transform: translateY(0);
+  }
+}

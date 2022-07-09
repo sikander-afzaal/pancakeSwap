@@ -1,0 +1,26 @@
+.trade {
+  padding-top: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%)
+    repeat scroll 0% 0%;
+  height: 100vh;
+}
+.tradeHeader {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 0 0 0;
+  background-color: white;
+  width: 100%;
+}
+.tradeHeader > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--purple-color);
+  padding: 6px 4px;
+}

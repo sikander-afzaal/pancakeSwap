@@ -30,11 +30,11 @@ function Header() {
             <img src={logoMob} alt="" />
           </Link>
           <div className={`${styles.navLink}  ${styles.navLink1}`}>
-            <Link className={styles.mainNav} to={"/"}>
+            <Link className={styles.mainNav} to={"/Trade/"}>
               Trade
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
-              <Link to={"/"}>Swap</Link>
+              <Link to={"/Trade/"}>Swap</Link>
               <Link to={"/"}>Limit</Link>
               <Link to={"/"}>Liquidity</Link>
               <Link to={"/"}>
