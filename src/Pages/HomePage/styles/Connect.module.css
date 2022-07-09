@@ -1,0 +1,127 @@
+.connectCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 48px 20px;
+  height: 390px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+}
+.radial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.connect {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.textPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  gap: 20px;
+}
+.textPart h1 {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 600;
+}
+.textPart h2 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttonDiv a {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-weight: 600;
+}
+.buttonDiv a:hover {
+  text-decoration: underline;
+}
+.beanDiv {
+  width: 240px;
+  position: absolute;
+  height: 256px;
+}
+.beanDiv:first-of-type {
+  right: 90%;
+  bottom: 16%;
+}
+.beanDiv:nth-child(2) {
+  left: 90%;
+  top: 16%;
+}
+.beanDiv img {
+  position: absolute;
+  max-width: 100%;
+  object-fit: contain;
+  right: 0;
+  top: 0%;
+  max-height: 100%;
+}
+.beanDiv img:first-of-type {
+  z-index: 1;
+  animation: coin 3.2s ease-in-out infinite alternate;
+}
+.beanDiv img:nth-of-type(2) {
+  z-index: 2;
+  animation: coin 3s ease-in-out infinite alternate;
+}
+.beanDiv img:nth-of-type(3) {
+  z-index: 3;
+  animation: coin 2.8s ease-in-out infinite alternate;
+}
+@keyframes coin {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .beanDiv:first-of-type {
+    right: auto;
+    left: 0%;
+  }
+  .beanDiv:nth-child(2) {
+    left: auto;
+    right: 0;
+  }
+}
+@media screen and (max-width: 826px) {
+  .beanDiv {
+    display: none;
+  }
+  .textPart br {
+    display: none;
+  }
+}

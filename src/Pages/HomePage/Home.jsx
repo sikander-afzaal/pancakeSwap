@@ -2,6 +2,7 @@ import React from "react";
 import patt from "../../Assets/hero-patt.svg";
 import Slider from "../../Components/Slider/Slider";
 import Cake from "./Cake";
+import Connect from "./Connect";
 import Earn from "./Earn";
 import Hero from "./Hero";
 import Prizes from "./Prizes";
@@ -21,6 +22,7 @@ function Home() {
       <Earn />
       <Prizes />
       <Cake />
+      <Connect />
     </div>
   );
 }
