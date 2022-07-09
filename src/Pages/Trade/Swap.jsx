@@ -11,12 +11,12 @@ import {
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Button from "../../../Components/Button/Button";
-import styles from "../styles/Swap.module.css";
-import busd from "../../../Assets/busd.png";
-import bnb from "../../../Assets/bnb.svg";
-import switchImg from "../../../Assets/switch-icon.svg";
-import graph from "../../../Assets/graph.PNG";
+import Button from "../../Components/Button/Button";
+import styles from "./styles/Swap.module.css";
+import busd from "../../Assets/busd.png";
+import bnb from "../../Assets/bnb.svg";
+import switchImg from "../../Assets/switch-icon.svg";
+import graph from "../../Assets/graph.PNG";
 
 const tokens = [
   {

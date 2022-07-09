@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 
-import Swap from "./Swap/Swap";
+import Swap from "./Swap";
 import styles from "./styles/Trade.module.css";
 function Trade() {
   return (
