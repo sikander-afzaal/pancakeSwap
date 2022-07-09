@@ -33,10 +33,10 @@
   font-weight: 600;
   line-height: 1.1;
   font-size: 40px;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
 }
 .leftCake span {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
 }
 .leftCake p {
   color: var(--purple-color);
@@ -125,7 +125,7 @@
   font-size: 16px;
 }
 .switchCol h2 {
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   font-weight: 600;
   line-height: 1;
   font-size: 24px;

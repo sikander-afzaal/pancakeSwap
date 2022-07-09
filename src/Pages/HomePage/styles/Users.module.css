@@ -30,14 +30,14 @@
   text-align: center;
 }
 .users h1:first-of-type {
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   line-height: 1.1;
   font-weight: 600;
   font-size: 40px;
 }
 .userDesc,
 .userWhy {
-  color: rgb(122, 110, 170);
+  color: var(--purple-color);
   font-weight: 400;
   max-width: 550px;
   font-size: 16px;

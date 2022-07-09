@@ -23,12 +23,12 @@
 }
 .prizeH1 {
   font-size: 40px;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   font-weight: 600;
   margin-bottom: 1rem;
 }
 .prize span {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
 }
 .prizeDesc {
   color: var(--purple-color);

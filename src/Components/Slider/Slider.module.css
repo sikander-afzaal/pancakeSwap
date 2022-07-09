@@ -8,7 +8,7 @@
   padding-left: 30px;
   background: linear-gradient(
     to bottom,
-    rgb(118, 69, 217) 0%,
+    var(--light-purple) 0%,
     rgb(69, 42, 122) 100%
   );
   border-radius: 20px;

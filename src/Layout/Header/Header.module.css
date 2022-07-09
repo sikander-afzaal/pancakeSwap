@@ -142,7 +142,7 @@
   width: 8px;
 }
 .languageDrop::-webkit-scrollbar-thumb {
-  background: rgb(122, 110, 170);
+  background: var(--purple-color);
   border-radius: 8px;
 }
 .languageDrop::-webkit-scrollbar-track {

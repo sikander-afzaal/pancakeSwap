@@ -3,6 +3,8 @@
 :root {
   --purple-color: rgb(122, 110, 170);
   --button-bg: rgb(31, 199, 212);
+  --light-purple: rgb(118, 69, 217);
+  --dark-purple: rgb(40, 13, 95);
 }
 * {
   margin: 0;

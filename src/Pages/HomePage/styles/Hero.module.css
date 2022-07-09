@@ -16,13 +16,13 @@
   gap: 20px;
 }
 .leftHero h1 {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
   line-height: 1.1;
   font-size: 64px;
 }
 .leftHero p {
   font-size: 20px;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   line-height: 1.1;
 }
 .buttonDiv {

@@ -37,10 +37,10 @@
   font-weight: 600;
   line-height: 1.1;
   font-size: 40px;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
 }
 .rightEarn span {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
 }
 .rightEarn p {
   color: var(--purple-color);
@@ -114,10 +114,10 @@
   font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
 }
 .bottomEarn h1 span {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
 }
 .bottomEarn h1 svg {
   transform: rotate(90deg);
@@ -144,14 +144,14 @@
   border-right: 1px solid rgb(215, 202, 236);
 }
 .switchCol h4 {
-  color: rgb(118, 69, 217);
+  color: var(--light-purple);
   font-weight: 600;
   line-height: 1;
   margin-bottom: 8px;
   font-size: 12px;
 }
 .switchCol h2 {
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   font-weight: 600;
   line-height: 1;
   font-size: 16px;

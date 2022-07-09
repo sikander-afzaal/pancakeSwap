@@ -1,7 +1,7 @@
 .userBox {
   background-color: white;
   border-radius: 24px;
-  color: rgb(40, 13, 95);
+  color: var(--dark-purple);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
