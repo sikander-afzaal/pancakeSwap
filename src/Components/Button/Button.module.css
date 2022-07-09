@@ -19,6 +19,10 @@
   background-color: var(--button-bg);
   color: white;
 }
+.mainBtn svg,
+.inverseBtn svg {
+  align-self: center !important;
+}
 .mainBtn:hover {
   background-color: transparent;
   color: var(--button-bg);

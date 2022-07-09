@@ -3,6 +3,7 @@ import patt from "../../Assets/hero-patt.svg";
 import Slider from "../../Components/Slider/Slider";
 import Earn from "./Earn";
 import Hero from "./Hero";
+import Prizes from "./Prizes";
 import styles from "./styles/Home.module.css";
 import Trade from "./Trade";
 import Users from "./Users";
@@ -17,6 +18,7 @@ function Home() {
       <Users />
       <Trade />
       <Earn />
+      <Prizes />
     </div>
   );
 }
