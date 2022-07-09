@@ -1,6 +1,7 @@
 import React from "react";
 import patt from "../../Assets/hero-patt.svg";
 import Slider from "../../Components/Slider/Slider";
+import Cake from "./Cake";
 import Earn from "./Earn";
 import Hero from "./Hero";
 import Prizes from "./Prizes";
@@ -19,6 +20,7 @@ function Home() {
       <Trade />
       <Earn />
       <Prizes />
+      <Cake />
     </div>
   );
 }
