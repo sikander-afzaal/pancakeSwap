@@ -1,0 +1,51 @@
+.mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.headCont {
+  background: linear-gradient(
+    139.73deg,
+    rgb(229, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  padding: 4rem 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+.head h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--light-purple);
+  line-height: 1;
+}
+.head p {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-purple);
+  line-height: 1;
+}
+
+.auctionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 2rem;
+  padding-inline: 20px;
+}

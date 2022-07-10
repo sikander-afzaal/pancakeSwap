@@ -35,8 +35,8 @@ function Header() {
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu1}`}>
               <Link to={"/Trade/"}>Swap</Link>
-              <Link to={"/"}>Limit</Link>
-              <Link to={"/"}>Liquidity</Link>
+              <Link to={"/Trade/Limit"}>Limit</Link>
+              <Link to={"/Trade/Liquidity"}>Liquidity</Link>
               <Link to={"/"}>
                 Perpetual{" "}
                 <span>
@@ -46,12 +46,12 @@ function Header() {
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink2}`}>
-            <Link className={styles.mainNav} to={"/"}>
+            <Link className={styles.mainNav} to={"/Earn/Farm"}>
               Earn
             </Link>
             <div className={`${styles.dropMenu} ${styles.dropMenu2}`}>
-              <Link to={"/"}>Farms</Link>
-              <Link to={"/"}>Pools</Link>
+              <Link to={"/Earn/Farm"}>Farms</Link>
+              <Link to={"/Earn/Pools"}>Pools</Link>
             </div>
           </div>
           <div className={`${styles.navLink}  ${styles.navLink3}`}>
@@ -171,8 +171,8 @@ function Header() {
               menu === "EARN" ? styles.openMenu : ""
             }`}
           >
-            <Link to={"/"}>Farms</Link>
-            <Link to={"/"}>Pools</Link>
+            <Link to={"/Earn/Farm"}>Farms</Link>
+            <Link to={"/Earn/Pools"}>Pools</Link>
           </div>
         </div>
         <div
