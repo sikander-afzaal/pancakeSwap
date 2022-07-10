@@ -339,3 +339,13 @@
     transform: translateY(0);
   }
 }
+
+@media (max-height: 575px) {
+  .graphSection {
+    height: 80vh;
+    align-items: flex-end;
+  }
+  .graphSection > img {
+    height: 100%;
+  }
+}
