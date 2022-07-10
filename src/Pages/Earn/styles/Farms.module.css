@@ -1,0 +1,81 @@
+.mainCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #faf9fa;
+  height: 100%;
+  padding-bottom: 1.5rem;
+}
+.headCont {
+  background: linear-gradient(
+    139.73deg,
+    rgb(229, 253, 255) 0%,
+    rgb(243, 239, 255) 100%
+  );
+  padding: 4rem 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+.head h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--light-purple);
+  line-height: 1;
+}
+.head p {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-purple);
+  line-height: 1;
+}
+.head a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--button-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
+.head a:hover {
+  opacity: 0.6;
+}
+.auctionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 2rem;
+  padding-inline: 20px;
+}
+.farmRowCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid rgb(233, 234, 235);
+  margin-top: 2rem;
+}

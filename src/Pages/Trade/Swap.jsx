@@ -96,7 +96,7 @@ function Swap() {
         <div className={styles.cardContent}>
           <div className={styles.inputContainer}>
             <div className={styles.inputInfo} onClick={() => setShowMenu(true)}>
-              <img src={inputs.inputOne.img} alt="coin image" />
+              <img src={inputs.inputOne.img} alt="coin" />
               <h1 className={styles.coinName}>{inputs.inputOne.name}</h1>
               <FontAwesomeIcon icon={faAngleDown} />
             </div>
@@ -141,7 +141,7 @@ function Swap() {
                 setShowMenu(true);
               }}
             >
-              <img src={inputs.inputTwo.img} alt="coin image" />
+              <img src={inputs.inputTwo.img} alt="coin " />
               <h1 className={styles.coinName}>{inputs.inputTwo.name}</h1>
               <FontAwesomeIcon icon={faAngleDown} />
             </div>
@@ -200,7 +200,7 @@ function Swap() {
                 }
                 return (
                   <div className={`${styles.token} ${disabled}`} key={index}>
-                    <img src={token.img} alt="token image" />
+                    <img src={token.img} alt="token" />
                     <div>
                       <h1>{token.name}</h1>
                       <p>{token.desc}</p>

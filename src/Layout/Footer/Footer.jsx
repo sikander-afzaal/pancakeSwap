@@ -79,7 +79,7 @@ function Footer() {
         <div className={styles.leftFooter}>
           <div className={styles.darkMode}>
             <input type="checkbox" className={styles.checkbox} id="checkbox" />
-            <label for="checkbox" className={styles.label}>
+            <label htmlFor="checkbox" className={styles.label}>
               <FontAwesomeIcon className={styles.faMoon} icon={faMoon} />
               <FontAwesomeIcon className={styles.faSun} icon={faSun} />
               <div className={styles.ball} />
