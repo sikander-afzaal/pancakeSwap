@@ -106,3 +106,8 @@
   cursor: pointer;
   user-select: none;
 }
+.topChange {
+  border: 2px solid rgb(233, 234, 235);
+  background-color: white;
+  border-radius: 0px 0px 24px 24px;
+}

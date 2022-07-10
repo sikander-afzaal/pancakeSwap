@@ -6,8 +6,8 @@ import FilterHeader from "../../Components/FilterHeader/FilterHeader";
 import styles from "./styles/Pools.module.css";
 import smallIco from "../../Assets/bnb.svg";
 import small from "../../Assets/small-ico.svg";
-import FarmBox from "../../Components/FarmBox/FarmBox";
 import PoolRow from "../../Components/PoolRow/PoolRow";
+import PoolBox from "../../Components/PoolBox/PoolBox";
 function Pools() {
   const [gridView, setGridView] = useState(false);
 
@@ -30,6 +30,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -49,6 +50,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -68,6 +70,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -87,6 +90,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -106,6 +110,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -125,6 +130,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -144,6 +150,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
     {
       icon: smallIco,
@@ -163,6 +170,7 @@ function Pools() {
       totalLocked: 166392570,
       duration: "37 weeks",
       fee: "0 ~ 2%",
+      apr: 0,
     },
   ];
   return (
@@ -182,12 +190,15 @@ function Pools() {
         >
           {data.map((elem, key) => {
             return gridView ? (
-              <FarmBox {...elem} key={key + "FarmRow"} />
+              <PoolBox {...elem} key={key + "FarmBox"} />
             ) : (
               <PoolRow {...elem} key={key + "FarmRow"} />
             );
           })}
-          <div onClick={() => window.scroll(0, 0)} className={styles.toTop}>
+          <div
+            onClick={() => window.scroll(0, 0)}
+            className={`${styles.toTop} ${gridView && styles.topChange}`}
+          >
             To Top <FontAwesomeIcon icon={faChevronUp} />{" "}
           </div>
         </div>

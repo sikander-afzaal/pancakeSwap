@@ -167,7 +167,10 @@ function Farms() {
               <FarmRow {...elem} key={key + "FarmRow"} />
             );
           })}
-          <div onClick={() => window.scroll(0, 0)} className={styles.toTop}>
+          <div
+            onClick={() => window.scroll(0, 0)}
+            className={`${styles.toTop} ${gridView && styles.topChange}`}
+          >
             To Top <FontAwesomeIcon icon={faChevronUp} />{" "}
           </div>
         </div>
