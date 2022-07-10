@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faGrip, faList } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./FilterHeader.module.css";
-function FilterHeader({ pool }) {
+function FilterHeader({ pool, setGridView }) {
   const [dropDown, setDropDown] = useState(false); //to open the drop down
   const [dropValue, setDropValue] = useState("Hot"); //for drop down value
   const [liveSwitch, setLiveSwitch] = useState(false); //for the live and finish switch
@@ -16,12 +16,18 @@ function FilterHeader({ pool }) {
           <FontAwesomeIcon
             className={`${gridSwitch && styles.activeType}`}
             icon={faGrip}
-            onClick={() => setGridSwitch(true)}
+            onClick={() => {
+              setGridSwitch(true);
+              setGridView(true);
+            }}
           />
           <FontAwesomeIcon
             className={`${!gridSwitch && styles.activeType}`}
             icon={faList}
-            onClick={() => setGridSwitch(false)}
+            onClick={() => {
+              setGridSwitch(false);
+              setGridView(false);
+            }}
           />
         </div>
 

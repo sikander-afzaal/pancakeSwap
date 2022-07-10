@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -8,8 +8,11 @@ import FilterHeader from "../../Components/FilterHeader/FilterHeader";
 import smallIco from "../../Assets/bnb.svg";
 import small from "../../Assets/small-ico.svg";
 import FarmRow from "../../Components/FarmRow/FarmRow";
+import FarmBox from "../../Components/FarmBox/FarmBox";
 
 function Farms() {
+  const [gridView, setGridView] = useState(false);
+
   const data = [
     {
       icon: smallIco,
@@ -17,7 +20,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -31,7 +34,7 @@ function Farms() {
       core: false,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -45,7 +48,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -59,7 +62,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -73,7 +76,7 @@ function Farms() {
       core: false,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -87,7 +90,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -101,7 +104,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -115,7 +118,7 @@ function Farms() {
       core: true,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -129,7 +132,7 @@ function Farms() {
       core: false,
       earned: 0,
       apr: "20.3%",
-      liquidity: "$$134,077,947",
+      liquidity: "$134,077,947",
       multiplier: "40x",
       contractUrl: "#",
       getUrl: "#",
@@ -152,11 +155,17 @@ function Farms() {
       </div>
       <div className={styles.auctionDiv}>
         {/* {filter header starts here-----------------------------------------------} */}
-        <FilterHeader />
+        <FilterHeader setGridView={setGridView} />
         {/* {filter header ends here-----------------------------------------------} */}
-        <div className={styles.farmRowCont}>
+        <div
+          className={`${gridView ? styles.farmRowGrid : styles.farmRowCont}`}
+        >
           {data.map((elem, key) => {
-            return <FarmRow {...elem} key={key + "FarmRow"} />;
+            return gridView ? (
+              <FarmBox {...elem} key={key + "FarmRow"} />
+            ) : (
+              <FarmRow {...elem} key={key + "FarmRow"} />
+            );
           })}
         </div>
       </div>
