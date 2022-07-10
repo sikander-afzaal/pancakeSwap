@@ -5,7 +5,140 @@ import { Link } from "react-router-dom";
 
 import styles from "./styles/Farms.module.css";
 import FilterHeader from "../../Components/FilterHeader/FilterHeader";
+import smallIco from "../../Assets/bnb.svg";
+import small from "../../Assets/small-ico.svg";
+import FarmRow from "../../Components/FarmRow/FarmRow";
+
 function Farms() {
+  const data = [
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: false,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: false,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: true,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+    {
+      icon: smallIco,
+      image: small,
+      core: false,
+      earned: 0,
+      apr: "20.3%",
+      liquidity: "$$134,077,947",
+      multiplier: "40x",
+      contractUrl: "#",
+      getUrl: "#",
+      pairInfoUrl: "#",
+      cakeEarned: 0,
+      name: "Cake-Bnb",
+    },
+  ];
+
   return (
     <div className={styles.mainCont}>
       <div className={styles.headCont}>
@@ -21,6 +154,11 @@ function Farms() {
         {/* {filter header starts here-----------------------------------------------} */}
         <FilterHeader />
         {/* {filter header ends here-----------------------------------------------} */}
+        <div className={styles.farmRowCont}>
+          {data.map((elem, key) => {
+            return <FarmRow {...elem} key={key + "FarmRow"} />;
+          })}
+        </div>
       </div>
     </div>
   );
