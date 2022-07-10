@@ -1,0 +1,123 @@
+.limit {
+  display: flex;
+  margin-top: 3rem;
+  gap: 3rem;
+  width: 100%;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+
+.limitLeft {
+  max-width: 914px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+.ordersContainer {
+  border: 1px solid rgb(231, 227, 235);
+  border-radius: 24px;
+  box-shadow: 0 2px 0 0 rgb(231, 227, 235);
+  background-color: white;
+}
+.ordersContainer > table {
+  display: flex;
+  flex-direction: column;
+}
+.containerHeader {
+  background-color: rgba(238, 234, 244, 0.75);
+  border-radius: 24px 24px 0 0;
+}
+.containerHeader > :nth-child(1) {
+  border-top-left-radius: 24px;
+}
+.containerHeader > :nth-child(2) {
+  border-top-right-radius: 24px;
+}
+.containerHeader > button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: rgba(238, 234, 244, 0.75);
+  opacity: 0.75;
+  cursor: pointer;
+  color: hsl(260, 76%, 21%);
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.containerHeader > button:hover {
+  color: hsla(260, 76%, 21%, 0.6);
+}
+.activeTab {
+  background-color: white !important;
+  opacity: 1 !important;
+  border-radius: 24px 24px 0 0;
+}
+.tableBody {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.tableRow,
+.headerRow {
+  display: flex;
+  width: 100%;
+}
+.headerRow {
+  border-bottom: 1px solid rgb(231, 227, 235);
+}
+.ordersContainer :is(th, td) {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 14px;
+}
+.headerRow > * {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.headerRow > :is(:nth-child(1), :nth-child(3), :nth-child(4)) {
+  width: 26.66666666666667%;
+  color: hsla(260, 76%, 21%, 0.6);
+}
+.headerRow > :nth-child(2) {
+  width: 20%;
+  color: hsla(260, 76%, 21%, 0.6);
+}
+.tableRow > :is(:nth-child(1), :nth-child(3), :nth-child(4)) {
+  width: 26.66666666666667%;
+}
+.tableRow > :nth-child(2) {
+  width: 20%;
+}
+.emptyTable {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emptyTable > p {
+  color: rgb(189, 194, 196);
+}
+.tableFoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.tableFoot > p {
+  color: var(--dark-purple);
+}
+.tableFoot > svg {
+  color: rgb(189, 194, 196);
+}
+
+@media (max-width: 800px) {
+  .limit {
+    flex-direction: column-reverse;
+  }
+  .card {
+    align-self: center;
+  }
+}

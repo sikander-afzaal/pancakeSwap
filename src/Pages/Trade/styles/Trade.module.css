@@ -1,5 +1,5 @@
 .trade {
-  padding-top: 56px;
+  padding-block: 56px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -8,7 +8,6 @@
   background: rgba(0, 0, 0, 0)
     linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%)
     repeat scroll 0% 0%;
-  height: 100vh;
 }
 .tradeHeader {
   display: flex;

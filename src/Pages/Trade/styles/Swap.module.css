@@ -237,7 +237,7 @@
   padding: 1rem;
   align-items: center;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: opacity 0.2s;
 }
 .token > img {
   width: 24px;
