@@ -53,14 +53,7 @@ function Swap() {
   const [showMenu, setShowMenu] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [showTransactions, setShowTransactions] = useState(false);
-  const [openOrders, setOpenOrders] = useState([
-    {
-      from: "asd",
-      to: "pedt",
-      limitPrice: 234,
-      status: "asd",
-    },
-  ]);
+  const [openOrders, setOpenOrders] = useState([]);
   const [ordersHistory, setOrdersHistory] = useState([]);
   const [showOrders, setShowOrders] = useState(true);
 
@@ -130,36 +123,40 @@ function Swap() {
                       );
                     })
                   ) : (
-                    <div className={styles.emptyTable}>
-                      <img src={confusedPancake} alt="confused pancake" />
-                      <p>No Open Orders</p>
-                    </div>
+                    <tr className={styles.emptyTable}>
+                      <td>
+                        <img src={confusedPancake} alt="confused pancake" />
+                      </td>
+                      <td>No Open Orders</td>
+                    </tr>
                   ) // If Length is 0
                 ) : ordersHistory.length > 0 ? ( // Order History Content
                   ordersHistory.map((order) => {
                     return (
-                      <div>
+                      <tr>
                         <td>{order.from}</td>
                         <td>{order.to}</td>
                         <td>{order.limitPrice}</td>
                         <td>{order.status}</td>
-                      </div>
+                      </tr>
                     );
                   })
                 ) : (
-                  <div className={styles.emptyTable}>
-                    <img src={confusedPancake} alt="confused pancake" />
-                    <p>No Open History</p>
-                  </div>
+                  <tr className={styles.emptyTable}>
+                    <td>
+                      <img src={confusedPancake} alt="confused pancake" />
+                    </td>
+                    <td>No Open History</td>
+                  </tr>
                 ) // If Length if 0
               }
             </tbody>
-            <tfoot className={styles.tableFoot}>
-              <FontAwesomeIcon icon={faArrowLeft} />
-              <p>Page 1 of 1</p>
-              <FontAwesomeIcon icon={faArrowRight} />
-            </tfoot>
           </table>
+          <div className={styles.tableFoot}>
+            <FontAwesomeIcon icon={faArrowLeft} />
+            <p>Page 1 of 1</p>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </div>
         </div>
       </div>
       <div className={`${swapStyles.card} ${styles.card}`}>
@@ -189,7 +186,7 @@ function Swap() {
               className={swapStyles.inputInfo}
               onClick={() => setShowMenu(true)}
             >
-              <img src={inputs.inputOne.img} alt="coin image" />
+              <img src={inputs.inputOne.img} alt="coin" />
               <h1 className={swapStyles.coinName}>{inputs.inputOne.name}</h1>
               <FontAwesomeIcon icon={faAngleDown} />
             </div>
