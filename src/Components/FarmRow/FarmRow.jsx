@@ -27,8 +27,11 @@ function FarmRow({
 }) {
   const [openRow, setOpenRow] = useState(false);
   return (
-    <div onClick={() => setOpenRow((prev) => !prev)} className={styles.farmRow}>
-      <div className={styles.farmRowTop}>
+    <div className={styles.farmRow}>
+      <div
+        onClick={() => setOpenRow((prev) => !prev)}
+        className={styles.farmRowTop}
+      >
         <div className={styles.rowImg}>
           <div className={styles.absDiv}>
             <img src={image} className={styles.absImg} alt="" />

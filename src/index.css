@@ -61,3 +61,6 @@
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
+html {
+  scroll-behavior: smooth;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 import styles from "./styles/Farms.module.css";
@@ -167,6 +167,9 @@ function Farms() {
               <FarmRow {...elem} key={key + "FarmRow"} />
             );
           })}
+          <div onClick={() => window.scroll(0, 0)} className={styles.toTop}>
+            To Top <FontAwesomeIcon icon={faChevronUp} />{" "}
+          </div>
         </div>
       </div>
     </div>
